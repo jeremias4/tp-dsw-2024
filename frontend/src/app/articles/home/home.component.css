@@ -1,0 +1,84 @@
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.contenedor-hijo {
+    width: 60%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;  
+    border-radius: 20px; 
+    border: 2px;
+    border-color: #d0d0d0;
+    border-style: solid;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.entrada {
+    padding: 10px;
+    background-color: whitesmoke;
+    padding: 25px;
+    width: 40%;
+    border-radius: 20px;
+}
+
+.containerBtn {
+    display: flex;
+    justify-content: space-between;    
+
+}
+
+
+.btnIzquierdo {
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: orange;
+    font-weight: bold;
+
+
+    border: 1px;
+    border: orange;
+    border-style: solid;
+
+}
+
+
+
+.btnDerecho {
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: orange;
+    font-weight: bold;
+
+
+    border: 1px;
+    border: orange;
+    border-style: solid;
+}
+
+.btnIzquierdo:hover {
+    background-color: orange;
+    color: white;
+}
+.btnDerecho:hover {
+    background-color: orange;
+    color: white;
+}
