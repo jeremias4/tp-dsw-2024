@@ -9,6 +9,9 @@ nav {
     justify-content: center;
     margin-bottom: 20px;
 }
+ul {
+    list-style: none;
+}
 
 .contenedor1 {
     width: 200px;
