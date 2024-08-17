@@ -1,5 +1,5 @@
 import express, { NextFunction, Request, Response, urlencoded } from 'express';
-import routes from './user/user.routes.js';
+import router from './routes/user.routes';
 import morgan from 'morgan';
 import cors from "cors";
 
@@ -10,9 +10,8 @@ const app = express();
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(urlencoded( { extended: false } ));
-app.use(routes);
+app.use(router);
 app.use(cors());
-
 
 connectDB();
 

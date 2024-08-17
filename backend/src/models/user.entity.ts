@@ -1,8 +1,17 @@
 import { Schema, model } from "mongoose";
 
 const userSchema = new Schema({
-  name: String,
-  description: String
+  id:{ type: Number},
+  name: {type: String},
+  description: {type: String}
 })
 
-export const UserModel = model("users" , userSchema)
+
+export class User {
+    constructor(
+      public id: string,
+      public name: string
+    ) {}
+  }
+  
+export const UserModel = model("users" , userSchema);
