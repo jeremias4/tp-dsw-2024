@@ -20,6 +20,7 @@ yarn-error.log
 .settings/
 *.sublime-workspace
 
+
 # Visual Studio Code
 .vscode/*
 !.vscode/settings.json
@@ -30,7 +31,7 @@ yarn-error.log
 
 # Miscellaneous
 /.angular/cache
-.sass-cache/
+.sass-cache/cd b
 /connect.lock
 /coverage
 /libpeerconnection.log
