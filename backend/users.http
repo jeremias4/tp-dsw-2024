@@ -1,12 +1,15 @@
-### obtener todos los users
-GET http://localhost:5000/api/all
+### ENDPOINTS
 
+### API DE USERS -> /api/users
+### API DE EVENTOS -> /api/events
+
+### obtener todos los datos
+GET http://localhost:5000//api/users/all
 
 ### obtener un user
 GET http://localhost:3000/api/users/0
-
 ### crear un nuevo user
-POST http://localhost:5000/api/new
+POST http://localhost:5000/api/users/new
 Content-Type: application/json
 
 {
@@ -15,25 +18,13 @@ Content-Type: application/json
 }
 
 ### modificar un user)
-PUT http://localhost:3000/api/users/0
+PATCH http://localhost:5000/api/users/upd/:id
 Content-Type: application/json
-
 {
   "name": "Atilaseeo",
-  "userClass": "warriorrrr",
-  "eventsSell": [1,2],
-  "eventsBuy": []
-}
-
-### Agregar Compra de evento a user
-PATCH http://localhost:3000/api/users/0
-Content-Type: application/json
-
-{
-  "userClass": "warriorrrr",
-  "eventsSell": [],
-  "eventsBuy": [1]   
 }
 
 ### borrar un user
-DELETE http://localhost:3000/api/users/0
+DELETE http://localhost:5000/api/users/del/:id
+### reemplazar un user
+PUT http://localhost:5000/api/users/rep/:id
