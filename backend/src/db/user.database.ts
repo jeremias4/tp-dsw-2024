@@ -1,7 +1,7 @@
 import { connect } from "mongoose";
-import {MONGO_URI} from "../config/app"
+import {MONGO_URI} from "../config/app.js"
 
 export const connectDB = () => {
-  connect("mongodb+srv://admin:<admin123>@cluster0.nwuqq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+  connect(`${MONGO_URI}`);
   console.log("Conectando a mongo db")
 }

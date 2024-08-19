@@ -1,20 +1,17 @@
 ### obtener todos los users
-GET http://localhost:3000/api/users
+GET http://localhost:5000/api/all
 
 
 ### obtener un user
 GET http://localhost:3000/api/users/0
 
 ### crear un nuevo user
-POST http://localhost:3000/api/new
+POST http://localhost:5000/api/new
 Content-Type: application/json
 
 {
-  "id": "1",
-  "name": "Atila",
-  "userClass": "warrior",
-  "eventsSell": [],
-  "eventsBuy": []
+  "id": "13443",
+  "name": "Atila"
 }
 
 ### modificar un user)
