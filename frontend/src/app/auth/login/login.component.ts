@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IconComponent } from '../../shared/icon/icon.component';
 
 @Component({
   selector: 'app-login',

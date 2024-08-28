@@ -4,7 +4,7 @@
 ### API DE EVENTOS -> /api/events
 
 ### obtener todos los datos
-GET http://localhost:5000//api/users/all
+GET http://localhost:5000/api/users/all
 
 ### obtener un user
 GET http://localhost:3000/api/users/0

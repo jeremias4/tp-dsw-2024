@@ -1,13 +1,4 @@
 
-nav {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-ul {
-    list-style: none;
-}
-
 .titulo-icono {
     font-size: 30px;
     font-weight: bold;
@@ -18,4 +9,17 @@ ul {
     color: black;
     margin-top: 20px;
     margin-bottom: 10px;    
+}
+
+.contenedor1 {
+    width: 200px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

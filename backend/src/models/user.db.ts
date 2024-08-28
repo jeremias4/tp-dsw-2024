@@ -6,7 +6,8 @@ const userSchema = new Schema({
   email: {type: String},
   gender: {type: String},
   city: {type: String},
-  typeUser: {type: String}
+  typeUser: {type: String},
+  password: {type: String}
 })
 
 

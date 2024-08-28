@@ -1,43 +1,49 @@
-
-<div class="contenedor">
-
-    <div class="contenedor-hijo">
-
-        <div class="contenedor1">
-           <!-- <img src="screen.jpg"> -->
-            <p class="titulo-icono">Ticketek</p>
+<div class="container-sm">
+    <div class="w-75 container border border-dark-subtle">
+        <div class="form-floating mt-3 mb-3">
+            <input type="text" class="form-control" id="floatingName">
+            <label for="floatingName">Name</label>
         </div>
-
-        <div>
-            <div>
-                <p class="ingresar">Registro</p>
-            </div>
-            <div class="form-contenedor">
-                    <input type="text" placeholder="Usuarios" class="input">
-                    <br>
-                    <input type="text" placeholder="Apellido" class="input">
-                    <br>
-                    <input type="password" placeholder="Contraseña" class="input">
-                    <br>
-                        <select class="input" style="margin-bottom: 20px;">
-                            <option>Hombre</option>
-                            <option>Mujer</option>
-                            <option>Otro</option>
-                        </select>
-                    <input type="text" placeholder="Ciudad de residencia" class="input">
-                    <br>
-                    <div style="display: flex; margin: 10px ; margin-bottom: 20px;">
-                        <label for="checkbox">¿Vendedor?</label>
-                        <input type="checkbox" style="">
-                    </div>
-                    <!-- <input type="submit" placeholder="Enviar">-->
-                    <a href="#" class="boton">Registro</a>
-            </div>
-            <!-- routerLink -->
-            <div><p>Ya tienes una cuenta? <a href="auth/login"> Login</a></p></div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingSurame">
+            <label for="floatingSurname">Surname</label>
         </div>
-        <a href="/home">Ir al home</a>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingEmail">
+            <label for="floatingEmail">Email Adress</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword">
+            <label for="floatingPassword">********</label>
+        </div>
+        <div class="dropdown m-3 d-flex justify-content-center">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gender
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Male</a></li>
+              <li><a class="dropdown-item" href="#">Female</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingCity">
+            <label for="floatingCity">City</label>
+        </div>
+        
+        <div class="d-flex justify-content-center mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="vendorCheck">
+            <label class="form-check-label" for="vendorCheck">Want be vendor</label>
+        </div>
+        <div class="d-grid mt-3 mb-3 gap-2">
+            <button type="submit" class="btn btn-primary">Register</button>
+        </div>
     
-    </div>
+        <div class="text-center mb-3">
+            <a href="/home">Ir al home</a>
+        </div>
+    
 
+    </div>
 </div>
+

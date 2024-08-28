@@ -1,30 +1,28 @@
 
-<div class="contenedor">
+<div class="container-sm">
+    <div class="w-75 container border border-dark-subtle">
 
-    <div class="contenedor-hijo">
-
-        <div class="contenedor1">
-           <!-- <img src="screen.jpg"> -->
-            <p class="titulo-icono">Ticketek</p>
+        <div class="form-floating mt-3 mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email Adress</label>
         </div>
-
-        <div>
-            <div>
-                <p class="ingresar">Ingresar</p>
-            </div>
-            <div class="form-contenedor">
-                    <input type="text" placeholder="Usuarios" class="input">
-                    <br>
-                    <input type="password" placeholder="Contraseña" class="input">
-                    <br>
-                    <!-- <input type="submit" placeholder="Enviar">-->
-                    <a href="#" class="boton">Iniciar sesión</a>
-            </div>
-            <!-- routerLink -->
-            <div><p>No tienes una cuenta? <a href="auth/register"> Registrate</a></p></div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
         </div>
-    
-        <a href="/home">Ir al home</a> 
+    <div class="d-grid mt-3 mb-3 gap-2">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+    <div>
+        <p class="text-center">You dont have account?
+            <a href="auth/register">Login</a>
+        </p>
+    </div>
+
+    <div class="text-center">
+        <a href="/home">Go to home</a> </div>
     </div>
 
 </div>
+
