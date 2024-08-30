@@ -9,12 +9,11 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: white;  
+    padding-bottom: 40px;  
     border-radius: 20px; 
     border: 2px;
-    border-color: #d0d0d0;
     border-style: solid;
+    border-color: gray;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -22,11 +21,22 @@
 }
 .entrada {
     padding: 10px;
-    background-color: whitesmoke;
     padding: 25px;
     width: 40%;
     border-radius: 20px;
+    border-color: white;
+
 }
+
+.padd {
+    padding: 20px;
+}
+.padds {
+    padding: 15px;
+    background-color: #212529;
+}
+
+
 
 .containerBtn {
     display: flex;
@@ -40,8 +50,8 @@
     justify-content: center;
     display: flex;
     background-color: transparent;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 13px;
+    
     text-decoration: none;
     color: orange;
     font-weight: bold;
@@ -61,8 +71,7 @@
     justify-content: center;
     display: flex;
     background-color: transparent;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 13px;
     text-decoration: none;
     border-radius: 20px;
     color: orange;

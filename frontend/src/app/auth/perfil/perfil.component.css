@@ -100,6 +100,14 @@
     align-items: center;
     padding-right: 40px;
 }
+.padd{
+    padding: 10px;
+}
+
+.padds {
+    padding: 15px;
+    background-color: #212529;
+}
 
 
 
