@@ -6,8 +6,8 @@ export const UserController = {
   
   getAllUser: async(req: Request, res: Response)=>{
     
-    try { 
-        
+    try {
+       //validar que tenga el permiso de obtener todos los usuarios    
         const users = await UserService.getAll();
         res.json({ data: users });
       } catch (err) {
