@@ -7,7 +7,8 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
   imports: [ReactiveFormsModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
-})
+}
+)
 export class LoginComponent {
   form = signal<FormGroup>(
     new FormGroup(
@@ -17,6 +18,4 @@ export class LoginComponent {
       }
 
     )
-  );
-
-}
+  )}

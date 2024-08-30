@@ -11,7 +11,12 @@ export const UserService = {
     addUser: async (input: any) => {
         return await UserModel.insertMany(new User(
             input.id,
-            input.name
+            input.name,
+            input.email,
+            input.gender,
+            input.city,
+            input.password,
+            input.typeUser
             ));},
 
     findId: async (id: any)=> {

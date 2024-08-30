@@ -1,5 +1,5 @@
 <div class="container-sm">
-    <form [formGroup]="form()">
+    <form [formGroup]="formulario" (ngSubmit)="register()">
     <div class="w-75 container border border-dark-subtle">
         <div class="form-floating mt-3 mb-3">
             <input type="text" class="form-control" id="floatingName" formControlName="name">
@@ -46,11 +46,3 @@
     </div>
 </form>
 </div>
-
-<pre>
-
-    {{
-        form().value | json
-    }}
-</pre>
-
