@@ -1,13 +1,13 @@
 import { Schema, model } from "mongoose";
 
 const userSchema = new Schema({
-  id: {type: Number},
   name: {type: String},
+  surname: {type: String},
   email: {type: String},
+  password: {type: String},
   gender: {type: String},
   city: {type: String},
-  typeUser: {type: String},
-  password: {type: String}
+  typeUser: {type: Boolean}
 })
 
 

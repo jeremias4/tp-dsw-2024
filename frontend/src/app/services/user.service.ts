@@ -14,9 +14,13 @@ export class UserService {
     this.baseUrl = `${appUsers.apiUrl}`;
   }
 
-  register(formvalue: any){
+  register(formValue: any){
+    console.log(formValue)
     return firstValueFrom(
-      this.httpclient.post<any>(`${this.baseUrl}/register`, formvalue)
+      this.httpclient.post<any>(`${appUsers.apiUrl}/new`, formValue, {
+        reportProgress:true
+      })
+      
     )
   }
 }

@@ -28,9 +28,9 @@ export const UserController = {
         }
   },
   addUser: async(req: Request, res: Response) => {
-      try {console.log("llega controlador");
+      try {
           const input = req.body;
-          const user = await UserService.addUser(input)
+          const user = await UserService.addUser(input)          
           res.status(201).json({ message: 'User created', data: user });
         } catch (err) {
           console.error(err);

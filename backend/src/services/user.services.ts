@@ -10,12 +10,12 @@ export const UserService = {
 
     addUser: async (input: any) => {
         return await UserModel.insertMany(new User(
-            input.id,
             input.name,
+            input.surname,
             input.email,
+            input.password,
             input.gender,
             input.city,
-            input.password,
             input.typeUser
             ));},
 

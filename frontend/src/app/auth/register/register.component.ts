@@ -1,6 +1,6 @@
 import { JsonPipe } from '@angular/common';
 import { Component, inject} from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { UserService } from '../../services/user.service';
 
 @Component({
@@ -18,7 +18,7 @@ export class RegisterComponent {
     this.formulario = new FormGroup({
         name: new FormControl(),
         surname: new FormControl(),
-        email: new FormControl(),
+        email: new FormControl('email@', Validators.email),
         password: new FormControl(),
         gender: new FormControl(),
         city: new FormControl(),
