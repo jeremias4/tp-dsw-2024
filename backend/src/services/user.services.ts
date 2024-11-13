@@ -33,4 +33,6 @@ export const UserService = {
 
     deleteUser: async(input: any) => {
         const data = UserModel.deleteOne(input);
-    }}
+    },
+    
+}

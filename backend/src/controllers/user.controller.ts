@@ -1,6 +1,7 @@
 
-import {Request, Response } from 'express';
+import {Request, response, Response } from 'express';
 import {UserService} from "../services/user.services.js"
+import { AsyncLocalStorage } from 'async_hooks';
 
 export const UserController = {
   
@@ -74,5 +75,4 @@ export const UserController = {
           console.error(err);
           res.status(500).send({ message: 'Error deleting user' });
         }
-  }
-  }
+  }}
