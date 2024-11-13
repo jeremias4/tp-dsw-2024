@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Evento } from './producto.interface'
 
 @Component({
   selector: 'app-producto',
@@ -9,4 +10,5 @@ import { Component } from '@angular/core';
 })
 export class ProductoComponent {
 
+  @Input() evento!: Evento;
 }

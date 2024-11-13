@@ -25,6 +25,9 @@ Content-Type: application/json
 }
 
 ### borrar un user
-DELETE http://localhost:5000/api/users/del/:id
+DELETE http://localhost:5000/api/users/del/:13443
+
+### borrar todos
+DELETE http://localhost:5000/api/users/del
 ### reemplazar un user
 PUT http://localhost:5000/api/users/rep/:id
