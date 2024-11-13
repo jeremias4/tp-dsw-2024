@@ -7,7 +7,6 @@ export const EventController = {
   getAllEvent: async(req: Request, res: Response)=>{
     
     try { 
-        
         const users = await EventService.getAll();
         res.json({ data: users });
       } catch (err) {

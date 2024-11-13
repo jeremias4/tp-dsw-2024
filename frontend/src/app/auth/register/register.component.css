@@ -66,6 +66,11 @@
     text-decoration: none;
 }
 
+.select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .boton:hover {
     background-color: #ffc107;
     color: white;

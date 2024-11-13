@@ -18,15 +18,21 @@
     padding: 20px;
     justify-self: center;
 }
-
-
+.textinput{
+    max-width: 80px;
+}
+.centrar-titulo{
+    background-color: rgba(208, 0, 0, 1);  
+    opacity: .9;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .titulo {
-    background-color: #BDBBB0;
-    padding: 10px;
-    padding-left: 17px;
-    padding-right: 17px;
-    border-radius: 10px;
+    
     color: white;
     font-size: 30px;
     font-weight: bold;
@@ -77,6 +83,7 @@ textarea {
 .boton {
     text-align: center;
     border-style: solid;
+    margin-bottom: 20px;
     border-color: #ffc107;
     border-width: 1px;
     border-radius: 15px;
@@ -87,7 +94,11 @@ textarea {
     font-weight: bold;
     text-decoration: none;
 }
-
+.select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .boton:hover {
     background-color: #ffc107;
     color: white;
