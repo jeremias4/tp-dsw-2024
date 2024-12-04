@@ -33,7 +33,7 @@ Regularidad:
 |CRUD simple|1. CRUD Usuario<br>2. CRUD Evento<br>3. CRUD Entrada|
 |CRUD dependiente|1. CRUD Entrada {depende de} CRUD Tipo Entrada<br>2. CRUD Usuario {depende de} CRUD Entrada|
 |Listado<br>+<br>detalle| 1. Listado de eventos filtrado por tipo de evento, muestra nro y tipo de evento => detalle CRUD Eventos<br> 2. Listado de entradas filtrado por rango de fecha, muestra nro de Entrada, fecha y nombre del usuario => detalle muestra datos completos del evento y del usuario|
-|CUU/Epic|1. Comprar un evento siendo usuario<br>2. Comprar evento siendo usuario|
+|CUU/Epic|1. Comprar un evento siendo usuario<br>2. Vender evento siendo productora|
 
 Adicionales para Aprobación
 |Req|Detalle|
