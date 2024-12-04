@@ -9,6 +9,5 @@ import { ProductoComponent } from '../producto/producto.component';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  eventos: Evento[] = await
 
 }

@@ -5,7 +5,6 @@
 ### Integrantes
 
 - 48615 - Miño, Jeremias
-- 49805 - Frias, Josias
 
 ### Repositorios
 
@@ -20,7 +19,7 @@ Plataforma digital que simule una tienda virtual mediante la cual se puedan vend
 
 ### Modelo
 
-https://excalidraw.com/#room=ec9c537f13bc7465ca39,k6N2wRI6GB18O8f39rdWiQ
+https://drive.google.com/file/d/1S33eDXgD6jk58kjlWxTuLubUSwdl7PHV/view?usp=sharing
 
 ## Alcance Funcional
 

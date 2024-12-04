@@ -7,8 +7,8 @@
 GET http://localhost:5000/api/users/all
 
 ### obtener un user
-GET http://localhost:3000/api/users/0
-### crear un nuevo user
+GET http://localhost:3000/api/users/:11
+### crear un nuevo user1
 POST http://localhost:5000/api/users/new
 Content-Type: application/json
 
