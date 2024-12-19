@@ -1,10 +1,10 @@
 import { Schema, model } from "mongoose";
 
 const eventSchema = new Schema({
-  id: {type: Number},
+  id: { type: Schema.Types.ObjectId },
   name: {type: String},
   date: {type: Date},
-  owner: {type: Number}, //ID DEL USUARIO
+  owner: { type: Schema.Types.ObjectId, ref:"users" },
   city: {type: String},
   adress: {type: String},
   size: {type: Number},

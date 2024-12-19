@@ -6,6 +6,6 @@ export class User {
     public password: String,
     public gender: String,
     public city: String,
-    public typeUser: Boolean,
+    public vendorUser: Boolean,
   ) {}
 }

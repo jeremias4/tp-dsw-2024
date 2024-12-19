@@ -1,0 +1,39 @@
+
+Flujo del Caso de Uso:
+Usuario se registra (método registrarUsuario() de la clase Usuario).
+
+###01 crear un nuevo user1
+POST http://localhost:5000/us/new
+Content-Type: application/json
+
+{
+  "name": "Atila",
+
+}
+
+El usuario se autentica para acceder a su cuenta (método autenticarUsuario()).
+###02 obtener un user
+GET http://localhost:3000/us/:11
+
+Busca eventos en la clase Evento (listarEventos() o buscarEvento()).
+###03 obtener todos los eventos
+GET http://localhost:5000/ev/all
+
+Selecciona un evento y realiza la compra del ticket.
+
+###04 obtener un evento
+GET http://localhost:5000/ev/:id
+
+Se genera un ticket (generarTicket() en la clase Ticket).
+### creacion de ticket
+POST http://localhost:5000/tk/new
+Content-Type: application/json
+
+{
+  "date": "hoy" 
+}
+
+
+El ticket queda asociado al usuario y evento, y se puede mostrar (mostrarTicket()).
+### obtener un evento
+GET http://localhost:5000/tk/:id

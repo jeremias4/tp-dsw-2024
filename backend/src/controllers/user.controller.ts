@@ -1,7 +1,6 @@
 
 import {Request, response, Response } from 'express';
 import {UserService} from "../services/user.services.js"
-import { AsyncLocalStorage } from 'async_hooks';
 
 export const UserController = {
   

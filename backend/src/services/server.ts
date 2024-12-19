@@ -28,8 +28,9 @@ class Server{
   }
   
   routes(){
-    this.app.use("/api/users", routes.UserRoutes)
-    this.app.use("/api/events", routes.EventRoutes)
+    this.app.use("/us", routes.UserRoutes)
+    this.app.use("/ev", routes.EventRoutes) 
+    this.app.use("/tk", routes.EventRoutes)
   }
   
   listen() {

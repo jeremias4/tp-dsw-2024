@@ -2,12 +2,7 @@ import { UserModel } from "../models/user.db.js"
 import { User } from "../models/user.entity.js";
 
 export const UserService = {
-    getAll: async ()=>{
-        return await UserModel.find()},
-
-    getById: async (id: any)=> {
-        return await UserModel.findById(id)},
-
+    //01
     addUser: async (input: any) => {
         return await UserModel.insertMany(new User(
             input.name,
@@ -18,7 +13,13 @@ export const UserService = {
             input.city,
             input.typeUser
             ));},
-
+    //02
+    getById: async (id: any)=> {
+        return await UserModel.findById(id)},
+    
+    getAll: async ()=>{
+        return await UserModel.find()},
+    
     findId: async (id: any)=> {
         return await UserModel.findById(id)},
 

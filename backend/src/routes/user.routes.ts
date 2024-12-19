@@ -3,22 +3,25 @@ import {UserController} from '../controllers/user.controller.js'
 
 export const router = Router();
 
-router.get('/all', (req, res) => {UserController.getAllUser(req, res); 
-});
-router.get('/:id', (req, res) => {UserController.getUser(req, res)});
-//creacion
-router.post('/new', (req, res) => {UserController.addUser(req, res)});
-//editar perfil
-router.patch('/upd/:id', (req, res) => {UserController.patchUser(req, res) });
+// REGULARIDAD
 
+//registro de usuario
+router.post('/new', (req, res) => {UserController.addUser(req, res)});
+//login usuario
+router.get('/:id', (req, res) => {UserController.getUser(req, res)});
+
+//AD
+//editar perfil
+router.patch('/:id', (req, res) => {UserController.patchUser(req, res) });
 //solo admin
 //remplazo de usuario 
-router.put('/rep/:id', (req, res) => {UserController.putUser(req, res) });
+router.put('/:id', (req, res) => {UserController.putUser(req, res) });
 //borrar usuario
-router.delete('/del/:id', (req, res) => {UserController.deleteUser(req, res) });
+router.delete('/:id', (req, res) => {UserController.deleteUser(req, res) });
+router.get('/all', (req, res) => {UserController.getAllUser(req, res);});
 
 
-/* 
+/*  AD
 function sanitizeUserInput(req: Request, res: Response) {
   req.body.santizedInput = {
     id: req.body.id,

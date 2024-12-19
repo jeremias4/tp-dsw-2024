@@ -1,6 +1,6 @@
 export class Event{
     constructor(  
-        public id: Number,
+        public id: String,
         public name: String,
         public date: Date,
         public owner: Number, //ID DEL USUARIO

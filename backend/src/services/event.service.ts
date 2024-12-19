@@ -2,9 +2,10 @@ import { EventModel } from "../models/event.db.js"
 import { Event } from "../models/event.entity.js";
 
 export const EventService = {
+    //03
     getAll: async ()=>{
         return await EventModel.find()},
-
+    //04
     getById: async (id: any)=> {
         return await EventModel.findById(id)},
 

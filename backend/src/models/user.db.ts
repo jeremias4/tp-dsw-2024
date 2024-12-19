@@ -7,7 +7,7 @@ const userSchema = new Schema({
   password: {type: String},
   gender: {type: String},
   city: {type: String},
-  typeUser: {type: Boolean}
+  vendorUser: {type: Boolean}
 })
 
 
