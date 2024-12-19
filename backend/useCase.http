@@ -7,13 +7,18 @@ POST http://localhost:5000/us/new
 Content-Type: application/json
 
 {
-  "name": "Atila",
-
+  "name": "Probando",
+  "surname": "prueba",
+  "email" : "prueba@prueba.com.ar",
+  "password" : "encriptado",
+  "gender": "male",
+  "city": "Rosario",
+  "vendorUser": False
 }
 
 El usuario se autentica para acceder a su cuenta (método autenticarUsuario()).
 ###02 obtener un user
-GET http://localhost:3000/us/:11
+GET http://localhost:3000/us/:email
 
 Busca eventos en la clase Evento (listarEventos() o buscarEvento()).
 ###03 obtener todos los eventos

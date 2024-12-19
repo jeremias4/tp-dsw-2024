@@ -7,9 +7,8 @@ export const EventController = {
   getAllEvent: async(req: Request, res: Response)=>{
     
     try { 
-        
-        const users = await EventService.getAll();
-        res.json({ data: users });
+        const events = await EventService.getAll();
+        res.json({ data: events });
       } catch (err) {
         console.error(err);
         res.status(500).json({ message: 'Error retrieving users' });
@@ -17,11 +16,11 @@ export const EventController = {
   },
   getEvent: async(req: Request, res: Response) => {
         try {
-          const user = await EventService.getById(req.params.id); 
-          if (!user) {
+          const event = await EventService.getById(req.params.id); 
+          if (!event) {
             return res.status(404).send({ message: 'User not found' });
           }
-          res.json({ data: user });
+          res.json({ data: event });
         } catch (err) {
           console.error(err);
           res.status(500).send({ message: 'Error retrieving user' });

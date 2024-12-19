@@ -1,9 +1,41 @@
 
 import {Request, response, Response } from 'express';
 import {UserService} from "../services/user.services.js"
+import { bcrypt } from 'bcrypt';
 
 export const UserController = {
-  
+
+  loginUser: async(req: Request, res: Response) => {
+    try {
+      const { email, password } = req.body;
+      const user = await UserService.getById({ email }); 
+      if (!user) {
+        return res.status(404).send({ message: 'User not found' });
+      }
+      const match = await bcrypt.compare(password, user.password);
+      if (!match){
+        return res.status(404).send({ message: 'Password Not Correct' });
+      }
+
+      res.status(200).json({ token, message: 'Inicio de sesión exitoso' }); 
+
+    } catch (err) {
+      console.error(err);
+      res.status(500).send({ message: 'Error retrieving user' });
+    }
+  },
+
+  registerUser: async(req: Request, res: Response) => {
+    try {
+        const input = req.body;
+        const user = await UserService.addUser(input)          
+        res.status(201).json({ message: 'User created', data: user });
+      } catch (err) {
+        console.error(err);
+        res.status(500).send({ message: 'Error creating user' });}
+},
+
+  /*
   getAllUser: async(req: Request, res: Response)=>{
     
     try {
@@ -15,27 +47,7 @@ export const UserController = {
         res.status(500).json({ message: 'Error retrieving users' });
       }
   },
-  getUser: async(req: Request, res: Response) => {
-        try {
-          const user = await UserService.getById(req.params.id); 
-          if (!user) {
-            return res.status(404).send({ message: 'User not found' });
-          }
-          res.json({ data: user });
-        } catch (err) {
-          console.error(err);
-          res.status(500).send({ message: 'Error retrieving user' });
-        }
-  },
-  addUser: async(req: Request, res: Response) => {
-      try {
-          const input = req.body;
-          const user = await UserService.addUser(input)          
-          res.status(201).json({ message: 'User created', data: user });
-        } catch (err) {
-          console.error(err);
-          res.status(500).send({ message: 'Error creating user' });}
-  },
+  
   //modificacion completa
   putUser: async (req: Request, res: Response) => {
       try {
@@ -74,4 +86,6 @@ export const UserController = {
           console.error(err);
           res.status(500).send({ message: 'Error deleting user' });
         }
-  }}
+  }*/
+ 
+      }

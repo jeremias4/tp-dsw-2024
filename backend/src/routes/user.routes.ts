@@ -6,11 +6,14 @@ export const router = Router();
 // REGULARIDAD
 
 //registro de usuario
-router.post('/new', (req, res) => {UserController.addUser(req, res)});
+router.post('/new', (req, res) => {UserController.registerUser(req, res)});
 //login usuario
-router.get('/:id', (req, res) => {UserController.getUser(req, res)});
+router.get('/:email', (req, res) => {UserController.loginUser(req, res)});
 
-//AD
+
+
+
+/*   AD AD AD AD AD
 //editar perfil
 router.patch('/:id', (req, res) => {UserController.patchUser(req, res) });
 //solo admin
@@ -20,8 +23,6 @@ router.put('/:id', (req, res) => {UserController.putUser(req, res) });
 router.delete('/:id', (req, res) => {UserController.deleteUser(req, res) });
 router.get('/all', (req, res) => {UserController.getAllUser(req, res);});
 
-
-/*  AD
 function sanitizeUserInput(req: Request, res: Response) {
   req.body.santizedInput = {
     id: req.body.id,

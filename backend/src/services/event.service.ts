@@ -7,9 +7,10 @@ export const EventService = {
         return await EventModel.find()},
     //04
     getById: async (id: any)=> {
-        return await EventModel.findById(id)},
+        return await EventModel.findOne({id})},
 
-    add: async (input: any) => {
+    /*
+        add: async (input: any) => {
         return await EventModel.insertMany(new Event(
             input.id,
             input.name,
@@ -34,4 +35,6 @@ export const EventService = {
 
     delete: async(input: any) => {
         const data = EventModel.deleteOne(input);
-    }}
+    }
+        */
+    }

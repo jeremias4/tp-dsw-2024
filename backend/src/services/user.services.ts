@@ -15,8 +15,9 @@ export const UserService = {
             ));},
     //02
     getById: async (id: any)=> {
-        return await UserModel.findById(id)},
+        return await UserModel.findOne(id)},
     
+        /*
     getAll: async ()=>{
         return await UserModel.find()},
     
@@ -34,6 +35,6 @@ export const UserService = {
 
     deleteUser: async(input: any) => {
         const data = UserModel.deleteOne(input);
-    },
+    },*/
     
 }
