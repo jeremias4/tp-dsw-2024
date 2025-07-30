@@ -1,7 +1,8 @@
 
 import {Request, response, Response } from 'express';
 import {UserService} from "../services/user.services.js"
-import { bcrypt } from 'bcrypt';
+import bcrypt from 'bcrypt';
+import { token } from 'morgan';
 
 export const UserController = {
 

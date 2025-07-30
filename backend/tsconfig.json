@@ -12,7 +12,10 @@
     "alwaysStrict": true,
     "skipLibCheck": true,
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": false
+
   },
   "include": ["src/**/*", "**/*.ts"],
   "exclude": ["node_modules"]
