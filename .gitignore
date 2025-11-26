@@ -1,0 +1,75 @@
+# ============================
+# Node / Express / TypeScript
+# ============================
+
+# Node modules
+node_modules/
+
+# Build
+dist/
+build/
+out/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.development
+.env.production
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# Cache
+.cache/
+.tmp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# ============================
+# Angular
+# ============================
+
+# Angular cache & build
+.angular/
+.angular/cache/
+dist/
+
+# Angular environment files (si los usás)
+src/environments/environment*.ts
+
+# Compiled files
+*.js
+*.js.map
+*.css.map
+
+# Generated typings
+*.d.ts
+
+# ============================
+# Optional
+# ============================
+
+# Coverage reports
+coverage/
+
+# Caches
+*.swp
+*.swo
+
+# Temporary files
+temp/
+tmp/
