@@ -17,3 +17,6 @@ Run install-vm-linux-backend.sh with correspondant permissions
     e) nano install-vm-linux-backend.sh
     f) chmod +x install-vm-linux-backend.sh
     c) sudo ./install-vm-linux-backend.sh
+
+Run tests 
+    h) node backend/src/tests/cli-tester.js
