@@ -20,3 +20,10 @@ Run install-vm-linux-backend.sh with correspondant permissions
 
 Run tests 
     h) node backend/src/tests/cli-tester.js
+
+
+
+Future features:
+
+1) CI/CD implementation
+2) Local LLM Run with Ollama
