@@ -4,6 +4,7 @@
 
 # Node modules
 node_modules/
+./node_modules/
 
 # Build
 dist/
@@ -49,7 +50,7 @@ Thumbs.db
 dist/
 
 # Angular environment files (si los usás)
-src/environments/environment*.ts
+/frontend/src/environments/environment*.ts
 
 # Compiled files
 *.js
