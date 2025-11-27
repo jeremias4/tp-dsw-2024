@@ -1,0 +1,5 @@
+# Forzar scripts a usar saltos de línea Linux
+*.sh text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.prisma text eol=lf

@@ -1,0 +1,54 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Usuario {
+  id              Int              @id @default(autoincrement())
+  name            String
+  email           String           @unique
+  password        String
+  gender          String?
+  city            String?
+  typeUser        String           @default("employee")
+  conversaciones  Conversacion[]
+  configuraciones ConfiguracionIA[]
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+}
+
+model ConfiguracionIA {
+  id           Int           @id @default(autoincrement())
+  nombreModelo String
+  temperatura  Float          @default(0.7)
+  maxTokens    Int            @default(512)
+  creadorId    Int
+  creador      Usuario        @relation(fields: [creadorId], references: [id])
+  conversaciones Conversacion[]
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+}
+
+model Conversacion {
+  id              Int           @id @default(autoincrement())
+  fechaInicio     DateTime      @default(now())
+  usuarioId       Int
+  usuario         Usuario       @relation(fields: [usuarioId], references: [id])
+  configuracionId Int
+  configuracion   ConfiguracionIA @relation(fields: [configuracionId], references: [id])
+  mensajes        Mensaje[]
+  createdAt       DateTime      @default(now())
+}
+
+model Mensaje {
+  id             Int          @id @default(autoincrement())
+  texto          String
+  fecha          DateTime     @default(now())
+  tipoMensaje    String       // "user" o "ai"
+  conversacionId Int
+  conversacion   Conversacion @relation(fields: [conversacionId], references: [id])
+}

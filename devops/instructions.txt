@@ -1,0 +1,19 @@
+These are the instructions to deploy a backend server on Oracle Linux 9,
+automatically, using what I consider a DevOps-style way of thinking about infrastructure.
+
+In my case, I’m using Proxmox VE 9.0, so I log in through the CLI and then run the following commands:
+
+    a) nano create_oracle_vm.sh
+    b) chmod +x create_oracle_vm.sh
+
+Run promox-lxc-deploy.sh with correspondant permissions
+    c) sudo ./create_oracle_vm.sh
+    
+Login lxc created
+    d) ssh user@10.0.3.50
+        d1) password: A1StrongPassword!
+
+Run install-vm-linux-backend.sh with correspondant permissions
+    e) nano install-vm-linux-backend.sh
+    f) chmod +x install-vm-linux-backend.sh
+    c) sudo ./install-vm-linux-backend.sh
